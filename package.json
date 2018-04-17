@@ -1,0 +1,37 @@
+{
+  "name": "state-maps",
+  "version": "1.0.0",
+  "description": "Generates state-maps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/state-maps.git"
+  },
+  "keywords": [],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/state-maps/issues"
+  },
+  "homepage": "https://github.com/jimkang/state-maps",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "uglify-es": "^3.3.5",
+    "uglify-js": "^3.3.5"
+  },
+  "dependencies": {
+    "basic-browser-request": "^8.0.0",
+    "d3-selection": "^1.3.0",
+    "datamaps": "^0.5.8",
+    "handle-error-web": "^1.0.1",
+    "probable": "^2.1.1",
+    "route-state": "^1.1.2",
+    "standard-bail": "^2.0.1"
+  }
+}
