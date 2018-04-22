@@ -49,7 +49,7 @@ function followRoute(routeDict) {
     generateWordsForStatesFlow();
     // TODO: Color and key type map.
   } else {
-    renderMap({ labelsForStates: routeDict });
+    renderMap({ labelsForStates: routeDict, title: routeDict.title });
   }
   renderControls({ onRoll });
 }
@@ -104,10 +104,11 @@ function reportTopLevelError(msg, url, lineNo, columnNo, error) {
   handleError(error);
 }
 
-function renderMap({ labelsForStates }) {
+function renderMap({ labelsForStates, title }) {
   var map = new Datamap({
     element: document.getElementById('map-container'),
     scope: 'usa'
   });
   map.labels({ customLabelText: labelsForStates });
+  document.getElementById('title').textContent = title;
 }
