@@ -76,7 +76,7 @@ function followRoute(routeDict) {
       numberOfUniqueValues: routeDict._numberOfUniqueValues
     });
   }
-  renderControls({ onRoll });
+  renderControls({ onRoll, hideControls: routeDict._hideControls });
 }
 
 function onRoll() {
