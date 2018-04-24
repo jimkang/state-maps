@@ -30,6 +30,19 @@ var rankingColorInterpolators = [
   colorSchemes.interpolateRainbow
 ];
 
+// var statesWithCalloutLabels = [
+//   'DC',
+//   'MD',
+//   'DE',
+//   'NJ',
+//   'CT',
+//   'RI',
+//   'MA',
+//   'VT',
+//   'NH',
+//   'ME'
+// ];
+
 var hillColors = [
   '#66b04b',
   '#267129',
@@ -201,7 +214,10 @@ function renderMap({ labelsForStates, title, valueType }) {
     scope: 'usa'
   });
 
-  map.labels({ customLabelText: labelsForStates });
+  map.labels({
+    customLabelText: labelsForStates,
+    fontFamily: 'Helvetica Neue, Montserrat, sans-serif'
+  });
   if (valueType === 'enum') {
     map.legend();
   }
