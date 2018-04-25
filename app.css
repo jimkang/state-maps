@@ -26,9 +26,11 @@ body {
   height: 100%;
 }
 
+/*
 text {
   font-weight: bold;
 }
+*/
 
 #roll-state-maps-button {
   font-family: futura;
