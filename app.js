@@ -217,7 +217,7 @@ function renderMap({ labelsForStates, title, valueType }) {
   map.labels({
     customLabelText: labelsForStates,
     fontFamily: 'Helvetica Neue, Montserrat, sans-serif',
-    fontSize: 14
+    fontSize: 16
   });
   if (valueType === 'enum') {
     map.legend();
