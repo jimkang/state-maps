@@ -85,7 +85,7 @@ function followRoute(routeDict) {
     renderMap({
       labelsForStates: getLabelsForStates(routeDict),
       title: routeDict._title,
-      valueType: routeDict._valueType,
+      valueType: routeDict._valueType || 'enum',
       numberOfUniqueValues: routeDict._numberOfUniqueValues
     });
   }
