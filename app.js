@@ -156,7 +156,7 @@ function renderMap({ labelsForStates, title, valueType }) {
 
   map.labels({
     customLabelText: labelsForStates,
-    fontFamily: 'Helvetica Neue, Montserrat, sans-serif',
+    fontFamily: 'Public Sans, Helvetica Neue, Montserrat, sans-serif',
     fontSize: 16
   });
   if (valueType === 'enum') {
